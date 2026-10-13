@@ -6,13 +6,13 @@ export type StudentDocument = Student & Document;
 
 @Schema({ timestamps: true })
 export class Student {
-    @Prop({ required: true })
+    @Prop({ required: true, trim: true })
     name: string;
 
-    @Prop({ required: true })
+    @Prop({ required: true, unique: true, trim: true })
     email: string;
 
-    @Prop()
+    @Prop({ min: 1 })
     age: number;
 }
 
