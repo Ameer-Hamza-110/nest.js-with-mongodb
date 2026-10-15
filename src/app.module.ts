@@ -8,6 +8,7 @@ import { UserModule } from './user/user.module.js';
 import { EmployeeModule } from './employee/employee.module.js';
 import { ProductModule } from './product/product.module.js';
 import { LibraryModule } from './library/library.module.js';
+import { ProjectModule } from './project/project.module.js';
 
 @Module({
   imports: [
@@ -17,7 +18,8 @@ import { LibraryModule } from './library/library.module.js';
     UserModule,
     EmployeeModule,
     ProductModule,
-    LibraryModule
+    LibraryModule,
+    ProjectModule
   ],
   controllers: [AppController],
   providers: [AppService],
